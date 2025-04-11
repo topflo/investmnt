@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthBridge - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">WealthBridge Admin</div>
+            <ul class="nav-links">
+                <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="admin-users.html">Users</a></li>
+                <li><a href="admin-investments.html">Investments</a></li>
+                <li><a href="admin-transactions.html">Transactions</a></li>
+                <li><a href="admin-settings.html">Settings</a></li>
+                <li><a href="logout.html" class="btn-secondary">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="admin-dashboard">
+        <div class="admin-sidebar">
+            <div class="admin-profile">
+                <img src="https://via.placeholder.com/50" alt="Admin Profile">
+                <h3>Admin User</h3>
+                <p>Administrator</p>
+                <div class="admin-status">
+                    <span class="status-indicator online"></span>
+                    <span>Online</span>
+                </div>
+            </div>
+            <ul class="admin-menu">
+                <li class="active"><a href="#overview"><i class="fas fa-chart-line"></i> Overview</a></li>
+                <li><a href="#users"><i class="fas fa-users"></i> User Management</a></li>
+                <li><a href="#investments"><i class="fas fa-wallet"></i> Investment Management</a></li>
+                <li><a href="#transactions"><i class="fas fa-exchange-alt"></i> Transaction Management</a></li>
+                <li><a href="#analytics"><i class="fas fa-chart-bar"></i> Analytics & Reports</a></li>
+                <li><a href="#security"><i class="fas fa-shield-alt"></i> Security</a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#market-data"><i class="fas fa-chart-line"></i> Market Data</a></li>
+            </ul>
+        </div>
+
+        <div class="admin-content">
+            <!-- Overview Section -->
+            <section id="overview" class="admin-section">
+                <h2>Platform Overview</h2>
+                <div class="admin-stats-grid">
+                    <div class="admin-stat-card">
+                        <h3>Total Users</h3>
+                        <p class="value">1,234</p>
+                        <p class="change positive">+12% <i class="fas fa-arrow-up"></i></p>
+                    </div>
+                    <div class="admin-stat-card">
+                        <h3>Active Investments</h3>
+                        <p class="value">$12,345,678</p>
+                        <p class="change positive">+5.6% <i class="fas fa-arrow-up"></i></p>
+                    </div>
+                    <div class="admin-stat-card">
+                        <h3>Pending Transactions</h3>
+                        <p class="value">23</p>
+                        <p class="change negative">+3 <i class="fas fa-arrow-up"></i></p>
+                    </div>
+                    <div class="admin-stat-card">
+                        <h3>Platform Revenue</h3>
+                        <p class="value">$123,456</p>
+                        <p class="change positive">+8.2% <i class="fas fa-arrow-up"></i></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Management Section -->
+            <section id="users" class="admin-section">
+                <h2>User Management</h2>
+                <div class="admin-actions">
+                    <button class="btn-primary"><i class="fas fa-plus"></i> Add User</button>
+                    <button class="btn-secondary"><i class="fas fa-filter"></i> Filter Users</button>
+                </div>
+                <div class="admin-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Verification</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WB123456</td>
+                                <td>John Doe</td>
+                                <td>john@example.com</td>
+                                <td><span class="status active">Active</span></td>
+                                <td><span class="status verified">Verified</span></td>
+                                <td>
+                                    <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-icon" title="Suspend"><i class="fas fa-pause"></i></button>
+                                    <button class="btn-icon danger" title="Delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Investment Management Section -->
+            <section id="investments" class="admin-section">
+                <h2>Investment Management</h2>
+                <div class="admin-actions">
+                    <button class="btn-primary"><i class="fas fa-plus"></i> Add Investment</button>
+                    <button class="btn-secondary"><i class="fas fa-cog"></i> Configure Rates</button>
+                </div>
+                <div class="investment-types">
+                    <div class="investment-type-card">
+                        <h3>Cryptocurrency</h3>
+                        <div class="type-stats">
+                            <p>Total Value: $5,678,901</p>
+                            <p>Active Users: 456</p>
+                            <p>Average Return: 12.5%</p>
+                        </div>
+                        <button class="btn-secondary">Manage Assets</button>
+                    </div>
+                    <div class="investment-type-card">
+                        <h3>Stocks</h3>
+                        <div class="type-stats">
+                            <p>Total Value: $3,456,789</p>
+                            <p>Active Users: 234</p>
+                            <p>Average Return: 8.2%</p>
+                        </div>
+                        <button class="btn-secondary">Manage Assets</button>
+                    </div>
+                    <div class="investment-type-card">
+                        <h3>Real Estate</h3>
+                        <div class="type-stats">
+                            <p>Total Value: $2,345,678</p>
+                            <p>Active Users: 123</p>
+                            <p>Average Return: 6.8%</p>
+                        </div>
+                        <button class="btn-secondary">Manage Assets</button>
+                    </div>
+                    <div class="investment-type-card">
+                        <h3>Gold</h3>
+                        <div class="type-stats">
+                            <p>Total Value: $1,234,567</p>
+                            <p>Active Users: 89</p>
+                            <p>Average Return: 4.5%</p>
+                        </div>
+                        <button class="btn-secondary">Manage Assets</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transaction Management Section -->
+            <section id="transactions" class="admin-section">
+                <h2>Transaction Management</h2>
+                <div class="transaction-filters">
+                    <select>
+                        <option>All Transactions</option>
+                        <option>Pending</option>
+                        <option>Completed</option>
+                        <option>Failed</option>
+                    </select>
+                    <select>
+                        <option>All Types</option>
+                        <option>Deposit</option>
+                        <option>Withdrawal</option>
+                        <option>Investment</option>
+                    </select>
+                    <input type="date" placeholder="Filter by Date">
+                </div>
+                <div class="admin-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>User</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TXN123456</td>
+                                <td>John Doe</td>
+                                <td>Deposit</td>
+                                <td>$5,000.00</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>2024-03-15</td>
+                                <td>
+                                    <button class="btn-icon success" title="Approve"><i class="fas fa-check"></i></button>
+                                    <button class="btn-icon danger" title="Reject"><i class="fas fa-times"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Analytics & Reports Section -->
+            <section id="analytics" class="admin-section">
+                <h2>Analytics & Reports</h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>User Growth</h3>
+                        <div class="chart-container">
+                            <canvas id="userGrowthChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Investment Distribution</h3>
+                        <div class="chart-container">
+                            <canvas id="investmentDistributionChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Revenue Trends</h3>
+                        <div class="chart-container">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Asset Popularity</h3>
+                        <div class="chart-container">
+                            <canvas id="assetPopularityChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Section -->
+            <section id="security" class="admin-section">
+                <h2>Security & Fraud Prevention</h2>
+                <div class="security-grid">
+                    <div class="security-card">
+                        <h3>Security Status</h3>
+                        <div class="security-status">
+                            <div class="status-item">
+                                <span class="status-indicator active"></span>
+                                <span>2FA Enabled</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-indicator active"></span>
+                                <span>SSL Active</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-indicator warning"></span>
+                                <span>3 Failed Login Attempts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="security-card">
+                        <h3>Fraud Alerts</h3>
+                        <div class="alert-list">
+                            <div class="alert-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div class="alert-content">
+                                    <h4>Suspicious Activity Detected</h4>
+                                    <p>Multiple failed login attempts from IP: 192.168.1.1</p>
+                                    <span class="alert-time">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="admin-section">
+                <h2>Platform Settings</h2>
+                <div class="settings-grid">
+                    <div class="settings-card">
+                        <h3>General Settings</h3>
+                        <div class="settings-form">
+                            <div class="form-group">
+                                <label>Platform Name</label>
+                                <input type="text" value="WealthBridge">
+                            </div>
+                            <div class="form-group">
+                                <label>Default Currency</label>
+                                <select>
+                                    <option>USD</option>
+                                    <option>EUR</option>
+                                    <option>GBP</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Maintenance Mode</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-card">
+                        <h3>API Configuration</h3>
+                        <div class="settings-form">
+                            <div class="form-group">
+                                <label>Market Data API Key</label>
+                                <input type="password" value="****************">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Service API Key</label>
+                                <input type="password" value="****************">
+                            </div>
+                            <div class="form-group">
+                                <label>Payment Gateway API Key</label>
+                                <input type="password" value="****************">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Data Management Section -->
+            <section id="market-data" class="admin-section">
+                <h2>Market Data Management</h2>
+                <div class="market-data-grid">
+                    <div class="market-data-card">
+                        <h3>Price Sources</h3>
+                        <div class="source-list">
+                            <div class="source-item">
+                                <span class="source-name">CoinGecko</span>
+                                <span class="status active">Active</span>
+                            </div>
+                            <div class="source-item">
+                                <span class="source-name">Alpha Vantage</span>
+                                <span class="status active">Active</span>
+                            </div>
+                            <div class="source-item">
+                                <span class="source-name">Gold API</span>
+                                <span class="status warning">Unstable</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-data-card">
+                        <h3>Update Schedule</h3>
+                        <div class="schedule-settings">
+                            <div class="form-group">
+                                <label>Crypto Prices</label>
+                                <select>
+                                    <option>Every 5 minutes</option>
+                                    <option>Every 15 minutes</option>
+                                    <option>Every 30 minutes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Stock Prices</label>
+                                <select>
+                                    <option>Every 15 minutes</option>
+                                    <option>Every 30 minutes</option>
+                                    <option>Every hour</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+</html> 

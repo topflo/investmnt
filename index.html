@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthBridge - Smart Investment Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">WealthBridge</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#investments">Investments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="login.html" class="btn-secondary">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Gateway to Smart Investments</h1>
+            <p>Join the waitlist for early access to our revolutionary investment platform</p>
+            <div class="waitlist-form">
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Create Account</button>
+                </form>
+                <p class="existing-user">Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-dashboard">
+        <div class="container">
+            <h2>Real-Time Market Prices</h2>
+            <div class="price-strip">
+                <div class="ticker-content">
+                <span id="btc-price-dup">BTC: $64,200 ▲ 3.2%</span>
+                <span id="eth-price-dup">ETH: $4,200 ▲ 2.5%</span>
+                <span id="gold-price-dup">Gold: $2,000 ▼ 0.4%</span>
+                <span id="aapl-price-dup">AAPL: $182.60 ▲ 1.5%</span>
+                <span id="rei-price-dup">Real Estate Index: $300 ▲ 0.8%</span>
+                <span id="bnb-price-dup">BNB: $570 ▲ 5.2%</span>
+                <span id="msft-price-dup">MSFT: $320.45 ▲ 2.0%</span>
+                <span id="goog-price-dup">GOOGL: $2,900 ▲ 1.8%</span>
+                <span id="amzn-price-dup">AMZN: $3,330 ▲ 1.4%</span>
+                <span id="tsla-price-dup">TSLA: $1,100 ▲ 4.5%</span>
+                <span id="silver-price-dup">Silver: $25.60 ▼ 0.3%</span>
+                <span id="bch-price-dup">Bitcoin Cash: $850 ▲ 6.5%</span>
+                    <!-- Duplicate the content for seamless effect -->
+                <span id="btc-price-dup">BTC: $64,200 ▲ 3.2%</span>
+                <span id="eth-price-dup">ETH: $4,200 ▲ 2.5%</span>
+                <span id="gold-price-dup">Gold: $2,000 ▼ 0.4%</span>
+                <span id="aapl-price-dup">AAPL: $182.60 ▲ 1.5%</span>
+                <span id="rei-price-dup">Real Estate Index: $300 ▲ 0.8%</span>
+                <span id="bnb-price-dup">BNB: $570 ▲ 5.2%</span>
+                <span id="msft-price-dup">MSFT: $320.45 ▲ 2.0%</span>
+                <span id="goog-price-dup">GOOGL: $2,900 ▲ 1.8%</span>
+                <span id="amzn-price-dup">AMZN: $3,330 ▲ 1.4%</span>
+                <span id="tsla-price-dup">TSLA: $1,100 ▲ 4.5%</span>
+                <span id="silver-price-dup">Silver: $25.60 ▼ 0.3%</span>
+                <span id="bch-price-dup">Bitcoin Cash: $850 ▲ 6.5%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="investments" class="investment-options">
+        <div class="container">
+            <h2>Investment Options</h2>
+            <div class="investment-grid">
+                <div class="investment-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Cryptocurrency</h3>
+                    <p>Invest in top cryptocurrencies with secure trading and storage solutions.</p>
+                    <a href="investment-pages/crypto.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="investment-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Gold</h3>
+                    <p>Secure your wealth with physical and digital gold investments.</p>
+                    <a href="investment-pages/gold.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="investment-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Real Estate</h3>
+                    <p>Access real estate investments with fractional ownership options.</p>
+                    <a href="investment-pages/real-estate.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="investment-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Stocks</h3>
+                    <p>Trade global stocks with advanced analytics and insights.</p>
+                    <a href="investment-pages/stocks.html" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose WealthBridge</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Platform</h3>
+                    <p>Bank-grade security with multi-layer protection for your investments.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Diversified Portfolio</h3>
+                    <p>Spread your investments across multiple asset classes for better returns.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Expert Support</h3>
+                    <p>24/7 customer support and investment guidance from industry experts.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Access</h3>
+                    <p>Manage your investments on the go with our mobile app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="loan-offering">
+        <div class="container">
+            <div class="loan-offering-content">
+                <h2>Need capital? We offer investment-backed loans up to $100,000.</h2>
+                <p>Get quick access to funds while keeping your investments growing. Our flexible loan options are backed by your existing investments.</p>
+                <a href="#loans" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="loans" class="loans">
+        <div class="container">
+            <h2>Investment-Backed Loans</h2>
+            <div class="loans-grid">
+                <div class="loan-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Property Loans</h3>
+                    <p>Get loans against your real estate investments with competitive interest rates.</p>
+                    <ul>
+                        <li>Up to 70% LTV</li>
+                        <li>Flexible repayment terms</li>
+                        <li>Quick approval process</li>
+                    </ul>
+                </div>
+                <div class="loan-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Crypto-Backed Loans</h3>
+                    <p>Access liquidity without selling your cryptocurrency holdings.</p>
+                    <ul>
+                        <li>Up to 50% LTV</li>
+                        <li>No credit check required</li>
+                        <li>Instant approval</li>
+                    </ul>
+                </div>
+                <div class="loan-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Gold-Backed Loans</h3>
+                    <p>Leverage your gold investments for immediate financial needs.</p>
+                    <ul>
+                        <li>Up to 80% LTV</li>
+                        <li>Low interest rates</li>
+                        <li>Secure storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I start investing?</h3>
+                    <p>Getting started is easy! Simply create an account, complete the verification process, and you can start investing with as little as $100.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are the minimum investment amounts?</h3>
+                    <p>Minimum investments vary by asset class: Cryptocurrency ($100), Stocks ($50), Gold ($10), Real Estate ($1,000).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How secure is my investment?</h3>
+                    <p>We use bank-grade security measures including 2FA, cold storage for crypto, and insured storage for physical assets.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are the fees?</h3>
+                    <p>Our fee structure is transparent and competitive: 0.5% trading fee, 1% management fee for managed portfolios, and no hidden charges.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I withdraw my funds?</h3>
+                    <p>Withdrawals can be made through bank transfer, crypto wallet, or check. Processing time is 1-3 business days depending on the method.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I get a loan against my investments?</h3>
+                    <p>Yes! We offer investment-backed loans with competitive rates. Loan amounts depend on the type and value of your investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="security-assurance">
+        <div class="container">
+            <h2>Security Assurance</h2>
+            <p class="section-description">Your security is our top priority. We implement industry-leading measures to protect your investments and personal information.</p>
+            
+            <div class="security-grid">
+                <div class="security-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Encrypted Transactions</h3>
+                    <p>All transactions are protected with bank-level encryption, ensuring your data remains secure at all times.</p>
+                </div>
+                
+                <div class="security-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Regulatory Compliance</h3>
+                    <p>Fully compliant with KYC and AML regulations to ensure a safe and transparent investment environment.</p>
+                </div>
+                
+                <div class="security-card">
+                    <i class="fas fa-umbrella"></i>
+                    <h3>Funds Protection</h3>
+                    <p>Your investments are protected and insured, providing an additional layer of security for your assets.</p>
+                </div>
+                
+                <div class="security-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>2FA Enabled</h3>
+                    <p>Two-factor authentication adds an extra layer of security to your account, keeping it safe from unauthorized access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Investment Journey?</h2>
+            <p>Join thousands of investors who trust WealthBridge for their financial future.</p>
+            <div class="waitlist-form">
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Join Waitlist</button>
+                </form>
+            </div>
+            <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WealthBridge</h3>
+                    <p>Your trusted partner in building wealth through smart investments.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@wealthbridge.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WealthBridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="chatbot.js"></script>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot-container">
+        <div class="chatbot-icon" id="chatbotIcon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>WealthBridge AI Assistant</h3>
+                <button class="close-chatbot" id="closeChatbot">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message">
+                    <p>Hello! I'm your WealthBridge AI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message here...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loan-popup" id="loanPopup">
+        <div class="popup-content">
+            <button class="close-popup" id="closePopup">&times;</button>
+            <div class="popup-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h2>Exclusive Loan Offer</h2>
+            </div>
+            <div class="popup-body">
+                <p>We're excited to announce that WealthBridge now offers investment-backed loans of up to <strong>$100,000</strong>!</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Competitive interest rates</li>
+                    <li><i class="fas fa-check-circle"></i> Flexible repayment terms</li>
+                    <li><i class="fas fa-check-circle"></i> Quick approval process</li>
+                    <li><i class="fas fa-check-circle"></i> Backed by your investments</li>
+                </ul>
+            </div>
+            <div class="popup-footer">
+                <button class="btn-primary" onclick="window.location.href='#loans'">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
